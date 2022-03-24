@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image:url('img1.jpg');
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .container{
+            margin-left: 30%;
+            height: 90%;
+            margin-top:150px;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            padding:2em;
+            width: 30%;
+            border:none;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 5px 5px 5px grey;
+        }
+        .display{
+            color: white;
+        }
+        .submit{
+            background-color: coral;
+            border: none;
+            color:white;
+            border-radius: 8px;
+            width:100px;
+            padding:4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="text-align:center;color:white">Current Weather Data <br>Weather Forecast
+        </h1>
+    </div>
+
+    <div style="text-align: center;" class="container">
+        
+        <input style="text-align: center;" type="text" class="city" placeholder="Enter city name"><br><br>
+        <arrow>click here</arrow>
+        <a style="text-align: center;" href="https://www.google.com/search?q=current+weather+consditions&rlz=1C1CHBF_enIN994IN994&oq=current+weather+consditions+&aqs=chrome..69i57j0i13l9.9757j1j7&sourceid=chrome&ie=UTF-8">
+            <img alt="current weather of current location" src="image.jpg"
+            width="250" height="170">
+         </a>
+         <br>
+        <button class="submit">Search</button>
+        <div class="display">
+        <h2 class="cityname"></h2>
+        <div class="image"></div>
+      
+        <h1 class="temp"></h1>
+        <div class="desc"></div>
+        <p class="humidity"></p>
+        </div>
+
+    </div>
+    <script src="js/myscripts.js"></script>
+</body>
+</html
